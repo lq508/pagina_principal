@@ -5,10 +5,50 @@
     <title>AkasikoTech</title>
     <link rel="stylesheet" href="./assets/css/master.css">
     <meta name="description" content="¡Bienvenido a AkasikoTech!, aqui encontraras contenido relacionado con la programación y la tecnologia">
+    <link rel="shortcut icon" href="assets/images/pc.ico">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+
+
+    <div class="modal">
+
+      <div class="content_modal">
+
+        <p class="title_modal"> Desarrollador  </p>
+        <p class="information_modal"> Angel David Veracieta Martinez</p>
+        <p class="title_modal"> Contacto  </p>
+        <div class="content_options">
+
+          <div class="telegram">
+
+          </div>
+
+            <div class="whatsapp">
+
+            </div>
+
+            <div class="gmail">
+
+            </div>
+
+        </div>
+
+
+        <div class="content_boton_modal_cerrar">
+          <div class="boton_cerrar_modal">
+            Cerrar
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+    </div>
 
     <header class="header">
 
@@ -18,20 +58,26 @@
 
       <nav class="header__nav">
 
-        <li class="li__nav"><a class="header__a" href="#">Inicio </a></li>
-        <li class="li__nav"><a class="header__a" href="#">Conocimientos </a></li>
-        <li class="li__nav"><a class="header__a" href="#">Contacto </a></li>
+        <li class="li__nav"><a class="header__a" href="#inicio">Inicio </a></li>
+        <li class="li__nav"><a class="header__a" href="#conocimientos">Conocimientos </a></li>
+
+          <li class="li__nav"><a class="header__a" href="#">Codigo y sistemas </a></li>
+        <li class="li__nav"><a class="header__a" href="#">Blog </a></li>
+
+        <li class="li__nav boton_modal_1"><div class="header__a" >Contacto </div></li>
 
 
       </nav>
 
       <div class="header__button_responsive">
 
+        <img src="./assets/images/cheuron-derecho.png" alt="boton responsive">
+
       </div>
 
     </header>
 
-    <section class="section initial_section">
+    <section class="section initial_section " >
 
       <div class="title__home">
 
@@ -43,7 +89,7 @@
     </section>
 
 
-    <section class="section">
+    <section class="section " id="inicio">
 
       <div class="section__informacion_2">
 
@@ -88,7 +134,7 @@
 
 
 
-    <section class="section ">
+    <section id="conocimientos" class="section ">
 
       <div class="section__informacion">
 
@@ -200,17 +246,31 @@
 
 
 
+
+
         <li class="footer_li"> <a href="#" class="footer__a"> Inicio </a></li>
         <li class="footer_li"> <a href="#" class="footer__a"> Conocimientos </a></li>
         <li class="footer_li"> <a  href="#" class="footer__a"> Contacto </a></li>
 
       </nav>
 
+      <div class="atribucion">
+        <a href="https://www.flaticon.es/iconos-gratis/flecha" title="flecha iconos">Flecha iconos creados por Rahul Kaklotar - Flaticon</a>
+      </div>
+
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="./assets/js/main.js">
+
+    </script>
+
+    <script src="./assets/js/modals.js">
+
+    </script>
+
+    <script src="./assets/js/responsive.js">
 
     </script>
   </body>

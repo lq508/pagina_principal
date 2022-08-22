@@ -30,7 +30,14 @@ body{
   grid-template-columns: 50% 50%;
   position: fixed;
    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+   grid-auto-rows: 100%;
 
+}
+
+.atribucion a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 
 }
 
@@ -226,8 +233,111 @@ text-align: center;
 }
 
 
+.boton_modal_1{
+
+  cursor: pointer;
+}
+
+.modal{
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  z-index: -10;
+  opacity: 0;
+  transition: opacity 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information_modal{
+  padding: 10px;
+}
+
+.title_modal{
+  font-size: 1.9rem;
+  font-weight: bold;
+  padding: 5px;
+
+
+}
+
+.modal.active{
+  z-index: 10;
+  opacity: 1;
+
+
+}
+
+.content_options{
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-auto-rows: 100%;
+  height: 250px;
+}
+
+
+.content_modal{
+  width: 70%;
+  max-width: 550px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.boton_cerrar_modal{
+  width: 100px;
+  height: 50px;
+  background: var(--color-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  margin-left: 10px;
+}
+
+.content_boton_modal_cerrar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+
+
+}
+
+.header__button_responsive{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+
+}
+
+.header__button_responsive img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  left: 30px;
+}
+
 
 @media screen and (max-width:768px){
+
+  .header__button_responsive{
+    display: block;
+  }
+
   .section__informacion{
     grid-template-columns:repeat(2 , 1fr);
     grid-template-rows:auto;
@@ -237,7 +347,7 @@ text-align: center;
   .header__nav{
     position:fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 100;
     background: white;
     display: flex;
@@ -245,7 +355,47 @@ text-align: center;
     align-items: center;
     flex-direction: column;
     left: 100%;
+    transition: left 1s;
   }
+
+  .imagen_2 img{
+    max-width: 450px;
+
+    max-height: 70%;
+
+
+  }
+
+.section__informacion_2{
+  grid-template-columns: 100%;
+  grid-template-rows:auto;
+}
+
+
+.informacion{
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.subtitle_section_2{
+
+  text-align: center;
+}
+
+.section__informacion{
+
+  grid-template-columns: 100%;
+
+}
+
+.content_information{
+  width: 70%;
+  height: 250px;
+
+
+}
 }
 @media screen and (max-width:425px){
 
