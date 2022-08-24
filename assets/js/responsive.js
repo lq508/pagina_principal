@@ -10,8 +10,9 @@ class Responsive{
 
   Botones_cerrado_responsive(){
     if(window.screen.width <= 768){
-      let botones_responsive = document.querySelectorAll(".header__a");
 
+      let botones_responsive = document.querySelectorAll(".header__a");
+      console.log("hola");
       botones_responsive.forEach(function(valor){
         console.log(valor);
         valor.addEventListener("click", ()=>{

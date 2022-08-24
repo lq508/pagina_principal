@@ -47,18 +47,23 @@ class Modals{
 
 
   Primer_modal(){
-    let boton_modal_1 = document.querySelector(".boton_modal_1");
-    boton_modal_1.addEventListener("click", ()=>{
-      let modal = document.querySelector(".modal");
-      modal.classList.add("active");
+    let boton_modal_1 = document.querySelectorAll(".boton_modal_1");
+
+    boton_modal_1.forEach((valor)=>{
+      valor.addEventListener("click", ()=>{
+        let modal = document.querySelector(".modal");
+        modal.classList.add("active");
 
 
 
-      console.log("click");
+        console.log("click");
 
+
+      });
 
     });
 
+  
 
     let boton_cerrar_modal = document.querySelector(".boton_cerrar_modal");
     boton_cerrar_modal.addEventListener("click", ()=>{
