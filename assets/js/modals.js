@@ -6,6 +6,43 @@ class Modals{
 
     this.Primer_modal();
     this.Segundo_Modal();
+    this.Tercer_Modal();
+  }
+
+
+  Tercer_Modal(){
+    let botones = document.querySelectorAll(".boton_modal_3");
+
+    botones.forEach((valor)=>{
+
+      valor.addEventListener("click", ()=>{
+        let modal = document.querySelector(".modal_3");
+        modal.classList.add("active");
+
+
+
+        console.log("click");
+
+
+      });
+
+    });
+
+
+
+
+
+    let boton_cerrar_modal = document.querySelector(".boton_cerrar_modal_3");
+    boton_cerrar_modal.addEventListener("click", ()=>{
+
+      let modal = document.querySelector(".modal_3");
+      modal.classList.remove("active");
+
+
+    })  ;
+
+
+
   }
 
 
@@ -35,6 +72,28 @@ class Modals{
 
 
   Segundo_Modal(){
+
+    let boton_modal_2 = document.querySelector(".boton_planes");
+    boton_modal_2.addEventListener("click", ()=>{
+      let modal = document.querySelector(".modal_2");
+      modal.classList.add("active");
+
+
+
+      console.log("click");
+
+
+    });
+
+
+    let boton_cerrar_modal = document.querySelector(".boton_cerrar_modal_2");
+    boton_cerrar_modal.addEventListener("click", ()=>{
+
+      let modal = document.querySelector(".modal_2");
+      modal.classList.remove("active");
+
+
+    })  ;
 
 
 
